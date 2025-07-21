@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Water Quality</title>
+</head>
+<body>
+    <div class="name">
+        Water Quality
+    </div>
+    <div class="context">
+            Given water sample is 
+            <b>"ACCESS TO SAFE DRINKING WATER IS ESSENTIAL TO HEALTH..."</b>
+        
+    </div>
+    <div class="project">
+        <form method="post" action="/predict">
+            <h1> Potability Checker</h1>
+            <input type="text" name="ph value" placeholder="ph value (0 to 14)" required>
+            <input type="text" name="Hardness" placeholder="Hardness (mg/L)" required>
+            <input type="text" name="Solids" placeholder="Solids (ppm)" required>
+            <input type="text" name="Chloramines" placeholder="Chloramines (ppm)" required>
+            <input type="text" name="Sulfate" placeholder="Sulfate (mg/L)" required>
+            <center><input class="btn" type="submit" value="PREDICT"></center>
+        </form>
+    </div>
+</body>
+</html>
